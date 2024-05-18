@@ -17,11 +17,8 @@ load('navTraj.mat');
 %                    (170 prerotations x 2 hemispheres)
 % navData.snavs - SNVAVs interleaved with imaging
 %                 (1488 x 2 hemispheres)
-
-% load('navData_rotSim'); % phantom scan with simulated rotations (FOV update)
+load('navData_rotSim'); % phantom scan with simulated rotations (FOV update)
 % load('navData_tranSim'); % phantom scan with simulated translations (1D motion stage)
-% load('navData_noMotion.mat'); % no motion human scan
-load('navData_motion.mat');
 
 % Append hemispheres
 navData.baseline = appendHems(navData.baseline);
